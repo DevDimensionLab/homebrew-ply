@@ -5,43 +5,43 @@
 class Plybuild < Formula
   desc "Plybuild is a developer tool for automating common tasks on a spring boot project."
   homepage "https://devdimensionlab.github.io/"
-  version "1.0.0-prerelease3"
+  version "1.0.0-prerelease8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease3/plybuild_1.0.0-prerelease3_darwin_arm64.tar.gz"
-      sha256 "ac1268a9f748ee2eaa26abc5ebefdc1b752664c2f05d531e82f34ee08d089101"
+      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease8/plybuild_1.0.0-prerelease8_darwin_arm64.tar.gz"
+      sha256 "b073561309e2b646b7a90957dec72e1f86d1ba05b5b64683599d9790622dda27"
 
       def install
-        bin.install "plybuild"
+        bin.install "ply"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease3/plybuild_1.0.0-prerelease3_darwin_amd64.tar.gz"
-      sha256 "6162fcbe2c2e0504fd67067e9b2d879160ccbe71ee08703ab5cc14c37b0d7f52"
+      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease8/plybuild_1.0.0-prerelease8_darwin_amd64.tar.gz"
+      sha256 "e348e7d7737b2ad6e23888a2c4efd66035abfbcd7c81b77f3888f13f3f72c90d"
 
       def install
-        bin.install "plybuild"
+        bin.install "ply"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease3/plybuild_1.0.0-prerelease3_linux_arm64.tar.gz"
-      sha256 "16fec9753cef3f495fd52c32e571498e3051d64e3e54e9f0d119494cf48ba99c"
+      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease8/plybuild_1.0.0-prerelease8_linux_arm64.tar.gz"
+      sha256 "6e95e1ff2613722df0e755e5b1da620f3b8fe195124f4c8ed5cf85ff619bac6a"
 
       def install
-        bin.install "plybuild"
+        bin.install "ply"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease3/plybuild_1.0.0-prerelease3_linux_amd64.tar.gz"
-      sha256 "429916e9b159b155381abdc4bafcb20c9a62d94c1a11c8b9d56af80ab78377b0"
+      url "https://github.com/devdimensionlab/plybuild/releases/download/v1.0.0-prerelease8/plybuild_1.0.0-prerelease8_linux_amd64.tar.gz"
+      sha256 "67eb466b8974c68b5a117d9664195143be413ea69e3614b2a6be4b4a6ce5ed89"
 
       def install
-        bin.install "plybuild"
+        bin.install "ply"
       end
     end
   end
